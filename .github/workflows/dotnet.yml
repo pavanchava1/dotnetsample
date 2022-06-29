@@ -21,8 +21,8 @@ jobs:
       uses: NuGet/setup-nuget@v1.0.5
     
     - name: Restore NuGet packages
-      run: nuget restore *.sln
+      run: nuget restore SampleWebApplication.sln
     
     - name: Build the Solution
-      run: msbuild *.sln /p:Configuration=Release
+      run: msbuild SampleWebApplication.sln /p:Configuration=Release
     
